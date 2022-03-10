@@ -1,289 +1,150 @@
-@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@1.100 & display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body
-{
-position: relative;
-width: 1024px;
-height: 1024px;
-
-margin-top: auto;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: auto;
-background: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root
-{
-    --cld: #1CD1B0;
-    --clh: #00669F;
-    --clbf: #00669F;
+body {
+  background: #e5e5e5;
 }
 
-.cabecalho
-{
-position: absolute;
-width: 1024px;
-height: 38px;
-left: 0px;
-top: 0px;
-background-color: var(--cld);
-padding: 10px;
+.bar__desconto {
+  width: 100%;
+  height: 38px;
+  background-color: #1cd1b0;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
 }
 
-.titulo
+header
 {
-position: absolute;
-width: 1024px;
+width: 100%;
 height: 101px;
-left: 0px;
-top: 38px;
-padding: 30px;
-background: #00669F;
+padding: 28px;
+background-color: #00669f;
 box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
 }
-.titulo h1{
-position: absolute;
-width: 224px;
-height: 47px;
-left: 28px;
 
-
-font-family: Roboto;
+header h1 
+{
+font-family: 'Roboto';
 font-style: normal;
-font-weight: normal;
+font-weight: 400;
 font-size: 40px;
 line-height: 47px;
 }
-.fundo
+
+main
+{ 
+    display: flex;
+    justify-items: center;
+}
+
+.bg__heroi
+{
+    width: 374px;
+    height: 217.81px;
+    background-image: url(../img/fundo-batman.png);
+}
+.bg__heroi img
+{
+    padding: 18px;
+}
+.cards
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 374px;
+    height: 597.01px;
+    margin: 50px;
+    
+}
+
+.foto__batman
 {
 position: absolute;
-width: 374px;
-height: 217.81px;
-left: 112px;
-top: 225.11px;
-background: url(../img/849bfede3a5193c34ab8a00379e64fa2\ 1.png);
-border-radius: 16px 16px 0px 0px;
-}
-.icon img
-{
-    position: absolute;
-    left: 5%;
-    right: 5%;
-    top: 6.25%;
-    bottom: 6.25%;
-}
-.foto__heroi
-{
-position: absolute;
+margin: 144px;
 width: 135.43px;
 height: 133.17px;
-left: 231.57px;
-top: 369.57px;
-border-radius: 50%;
-background: url(../img/liga-justicia-batman-kO4H--1024x512@abc\ 1.png);
-z-index: 1;
+background-image: url(../img/batman.png);
+ border-radius: 50%;
+    
 }
 
-.batman__fundo
+.foto__arlequina
 {
-position: absolute;
-
-width: 374px;
-height: 379.2px;
-left: 112px;
-top: 441.8px;
-background: #F3F3F3;
+    position: absolute;
+    width: 135.43px;
+    height: 133.17px;
+    margin: 144px;
+    border-radius: 50%;
+    background-image: url(../img/arlequina.png);
+}
+.corpo__card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 374px;
+    height: 379.2px;
+    background: #F3F3F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    gap: 30px;
+    
 }
 
-.nome__heroi
+.titulo__heroi
 {
-
-position: absolute;
-
-width: 137.69px;
-height: 39.5px;
-left: 250.44px;
-top: 525.31px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
+font-weight: 400;
 font-size: 30px;
 line-height: 35px;
-display: flex;
-align-items: flex-end;
-text-align: center;
-
-color: #000000;
-
-
+margin-top: 20px;
 }
 
-.bruce
+.descricao__heroi
 {
-position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
 width: 301.33px;
 height: 127.53px;
-left: 148px;
-top: 594.1px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-
-color: #333333;
 }
-.botao
+
+.descricao__heroi p 
 {
-position: absolute;
-width: 145.34px;
-height: 54.76px;
-left: 225.93px;
-top: 745.39px;
-
-background: #00669F;
-
-}
-
-.botao a{
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-}
-
-.rodape
-{
-    display: block;
-position: absolute;
-width: 1024px;
-height: 51px;
-left: 0px;
-top: 972px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-color: #FFF9F9;
-line-height: 19px;
-background: #00669F;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-padding: 15px;
-}
-
-.fundo2
-{
-    position: absolute;
-    width: 373.57px;
-    height: 217.81px;
-    left: 572.43px;
-    top: 225.11px;
-    
-background: url(../img/fundo__arlequina.png);
-border-radius: 16px 16px 0px 0px;
-}
-.icon2 img
-{
-    position: absolute;
-    left: 5%;
-    right: 5%;
-    top: 6.25%;
-    bottom: 6.25%;
-}
-.foto__heroi2
-{
-    position: absolute;
-    width: 137.69px;
-    height: 137.69px;
-    left: 698.87px;
-    top: 367.31px;
-border-radius: 50%;
-background: url(../img/arlequina.png);
-z-index: 1;
-}
-
-.arlequina__fundo
-{
-    position: absolute;
-    width: 374px;
-    height: 379px;
-    left: 572px;
-    top: 442px;
-    
-    background: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-.nome__heroi2
-{
-
-    position: absolute;
-    width: 192.99px;
-    height: 39.5px;
-    left: 710.79px;
-    top: 525.31px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 35px;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-    
-    color: #000000;
-
-
-}
-
-.arlequina
-{
-    position: absolute;
-    width: 301.33px;
-    height: 127.53px;
-    left: 616.49px;
-    top: 594.1px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
-    
-    color: #333333;
 }
-.botao2
+
+.botao
 {
-    position: absolute;
-    width: 145.34px;
-    height: 54.76px;
-    left: 694.36px;
-    top: 745.39px;
-    
-    background: #00669F;
-
+display: flex;
+align-items: center;
+justify-content: center ; 
+width: 145.34px;
+height: 54.76px;
+background-color: #00669F;
 }
 
-.botao2 a{
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
+.botao a
+{
+text-decoration: none;
+color: white;
 }
 
-
+footer
+{
+    width: 100%;
+    height: 51px;
+    background-color: #00669f;
+    color:#FFF9F9;
+    padding: 20px;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+}

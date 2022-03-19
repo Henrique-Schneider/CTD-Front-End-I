@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #e5e5e5;
+  height: 100vh;
+}
+
+.desconto {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  height: 2vh;
+  width: 100%;
+  background-color: #d1891c;
+}
+
+.titulo__card {
+  display: flex;
+  padding: 1%;
+  color: white;
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+  background: #00669f;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+.container {
+  width: 80%;
+  margin: 120px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4vw;
+  flex-wrap: wrap;
+}
+.card {
+  width: 26vw;
+  background: #f3f3f3;
+  border-radius: 16px 16px 0px 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-header {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.bg__heroi {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.icon {
+  margin: 6%;
+  width: 4vw;
+
+  position: absolute;
+}
+
+.perfil {
+  left: 33%;
+  top: 70%;
+  bottom: 0;
+
+  position: absolute;
+  width: 8vw;
+  border-radius: 50%;
+}
+
+.class-body {
+display: flex;
+flex-direction: column;
+  width: 85%;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  
+}
+
+
+
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 7%;
+  margin-top: 6%;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.botao {
+  
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 8vw;
+  height: 6vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  background: #00669f;
+}
+
+.adicao {
+  display: flex;
+  padding: 3%;
+  right: 5%;
+  position: fixed;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #00669f;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 12vh;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  background: #00669f;
+}
+
+.direitos {
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+.git__link {
+  cursor: pointer;
+  width: 30%;
+}
+
+@media (max-width: 768px)
+{
+    .card
+    {
+        width: 26vw;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    .botao{
+        width: 10VW;
+        height: 4vh;
+        font-size: 0.6rem;
+    }
+    .git__link {
+        width: 40%;
+    }
+    .adicao{
+        right: 10%;
+        padding: 1%;
+    }
+    
+}
+@media (max-width: 460PX)
+{
+    .git__link
+    {
+        width: 50%;
+    } 
+    .row
+    {
+        flex-direction: column;
+    } 
+    .card
+    {
+        width: 50vw;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    .botao{
+        width: 10VW;
+        height: 4vh;
+        font-size: 0.5rem;
+    }
+    .git__link {
+        width: 50%;
+    }
+    .adicao{
+        right: 30%;
+        padding: 1%;
+    }
+}

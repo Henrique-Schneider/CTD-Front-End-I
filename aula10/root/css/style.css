@@ -15,10 +15,16 @@ html {
   font-size: 16px;
 }
 
+
 header {
   display: flex;
   width: 100%;
   flex-direction: column;
+}
+
+h1
+{
+  font-size: 3rem;
 }
 
 .barra__desconto {

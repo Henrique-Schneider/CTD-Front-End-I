@@ -82,18 +82,14 @@ body {
 }
 
 .class-body {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   width: 85%;
   margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
-  
 }
-
-
-
 
 h2 {
   font-size: 1.5rem;
@@ -107,7 +103,6 @@ p {
 }
 
 .botao {
-  
   margin-top: 5%;
   margin-bottom: 5%;
   width: 8vw;
@@ -152,64 +147,57 @@ footer {
   width: 30%;
 }
 
-@media (max-width: 768px)
-{
-    .card
-    {
-        width: 26vw;
-    }
+@media (max-width: 768px) {
+  .card {
+    width: 26vw;
+  }
 
-    h2{
-        font-size: 1.2rem;
-    }
-    p{
-        font-size: 0.7rem;
-    }
-    .botao{
-        width: 10VW;
-        height: 4vh;
-        font-size: 0.6rem;
-    }
-    .git__link {
-        width: 40%;
-    }
-    .adicao{
-        right: 10%;
-        padding: 1%;
-    }
-    
+  h2 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .botao {
+    width: 10vw;
+    height: 4vh;
+    font-size: 0.6rem;
+  }
+  .git__link {
+    width: 40%;
+  }
+  .adicao {
+    right: 10%;
+    padding: 1%;
+  }
 }
-@media (max-width: 460PX)
-{
-    .git__link
-    {
-        width: 50%;
-    } 
-    .row
-    {
-        flex-direction: column;
-    } 
-    .card
-    {
-        width: 50vw;
-    }
+@media (max-width: 460px) {
+  .git__link {
+    width: 50%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .card {
+    width: 50vw;
+  }
 
-    h2{
-        font-size: 1.2rem;
-    }
-    p{
-        font-size: 0.7rem;
-    }
-    .botao{
-        width: 10VW;
-        height: 4vh;
-        font-size: 0.5rem;
-    }
-    .git__link {
-        width: 50%;
-    }
-    .adicao{
-        right: 30%;
-        padding: 1%;
-    }
+  h2 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .botao {
+    width: 10vw;
+    height: 4vh;
+    font-size: 0.5rem;
+  }
+  .git__link {
+    width: 50%;
+  }
+  .adicao {
+    right: 30%;
+    padding: 1%;
+  }
 }

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+    background-color:#E5E5E5;
+}
+header .desconto {
+  display: flex;
+  align-items: center;
+  height: 23px;
+  padding-left: 10px;
+  background-color: #1cd1b0;
+}
+
+header .menu__loja {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+  height: 80px;
+  background: #00669f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.container
+{
+margin-left: auto;
+margin-right: auto;
+width: 645.32px;
+height: 633.79px;
+}
+h1{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+fieldset
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: none;
+}
+.box__registro
+{
+    width: 100%;
+    height: 60px;
+}
+
+.botoes{
+    
+    display: flex;
+    gap: 20px;
+}
+  .botoes__limpar {
+    width: 50%;
+    height: 53.79px;
+    background: #888888;
+    border-radius: 23.011px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .botoes__registrar {
+    width: 50%;
+    height: 53.79px;
+    background: #1cd1b0;
+    border-radius: 23.011px;
+    border: none;
+    cursor: pointer;
+  }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 61px;
+  background-color: #00669f;
+  
+}

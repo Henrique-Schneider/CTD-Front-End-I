@@ -120,6 +120,7 @@ p {
   display: flex;
   width: 8%;
   right: 0;
+  margin-right: 9vw;
   position: fixed;
   justify-content: center;
   cursor: pointer;
@@ -152,6 +153,15 @@ footer {
   .card {
     width: 26vw;
   }
+  .perfil {
+    left: 33%;
+    top: 70%;
+    bottom: 0;
+  
+    position: absolute;
+    width: 8vw;
+    border-radius: 50%;
+  }
 
   h2 {
     font-size: 1.2rem;
@@ -180,14 +190,23 @@ footer {
     flex-direction: column;
   }
   .card {
-    width: 50%;
+    width: 80%;
+  }
+  .perfil {
+    left: 33%;
+    top: 70%;
+    bottom: 0;
+  
+    position: absolute;
+    width: 20vw;
+    border-radius: 50%;
   }
 
   h2 {
     font-size: 1.2rem;
   }
   p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .botao {
     width: 10vw;
@@ -195,10 +214,18 @@ footer {
     font-size: 0.5rem;
   }
   .git__link {
-    width: 50%;
+    width: 100%;
+  }
+  .git__link img{
+    width: 80%;
+  }
+  .direitos
+  {
+    font-size: 0.8rem;
+  }
   }
   .adicao {
     right: 30%;
     padding: 1%;
   }
-}
+

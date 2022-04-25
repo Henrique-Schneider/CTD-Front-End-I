@@ -1,128 +1,141 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /*valor igual a 10px*/
   font-family: "Roboto", sans-serif;
 }
 
 body {
-  background: #e5e5e5;
   width: 100%;
+  height: 100%;
 }
-
-html {
-  font-size: 16px;
-}
-
 
 header {
-  display: flex;
   width: 100%;
-  flex-direction: column;
 }
-
-h1
-{
-  font-size: 3rem;
-}
-
-.barra__desconto {
+header h5 {
   width: 100%;
-  height: 38px;
+  height: 3.8rem;
   background-color: #1cd1b0;
-  padding: 10px;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
 }
-
-.barra__titulo {
+header h1 {
   width: 100%;
-  height: 101px;
+  height: 10.1rem;
   background-color: #00669f;
-  padding: 28px;
   box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+  font-size: 4rem;
+  padding: 2.8rem;
+  font-weight: 400;
+  line-height: 4.7rem;
 }
 
-.container__cards {
-  display: flex;
-  width: 80%;
-  margin-top: 120px;
-  margin-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
-}
-section {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 10%;
-}
-
-.body__cards {
-  width: 374px;
-  height: 597px;
-  display: flex;
-  
-  flex-direction: column;
-  background-color: #f3f3f3;
-  border-radius: 16px 16px 32px 32px;
-  box-shadow: 0px 16px 15px -9px rgba(0,0,0,0.81); 
-}
-
-.fundo__cards {
-  position: relative;
-  border-radius: 16px 16px 0px 0px;
-}
-
-.icon__card {
-  position: absolute;
-  padding: 20px;
-}
-.foto__perfil {
-  position: absolute;
-  align-self: center;
-  margin-top: 140px;
-}
-
-.foto__perfil img {
-  border-radius: 50%;
-}
-
-.descricao {
-  display: block;
-  text-align: center;
-  width: 80%;
-  margin-top: 20%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.descricao__heroi {
-  margin-top: 10%;
-}
-
-.botao {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
-  height: 55px;
-  align-self: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  background-color: #00669f;
-  cursor: pointer;
-}
-
-.botao a {
-  color: white;
-  text-decoration: none;
-}
-footer {
   width: 100%;
-  height: 51px;
+  height: 100%;
+}
+main .card__deck {
+  display: flex;
+  width: 834px;
+  height: 597.01px;
+  margin-top: 85px;
+  margin-bottom: 150px;
+  align-items: center;
+  justify-content: center;
+  gap: 85px;
+}
+main .card__body {
+  display: flex;
+  flex-direction: column;
+  width: 374px;
+  height: 597.01px;
+  background: #f3f3f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px 16px 0px 0px;
+}
+main .card__banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  max-height: 217.81px;
+  border-radius: 16px 16px 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+main .card__banner.batman {
+  background-image: url(../img/fundo-batman.png);
+}
+main .card__banner.arlequina {
+  background-image: url(../img/fundo__arlequina.png);
+}
+main .card__banner .perfil__heroi {
+  width: 89%;
+  position: absolute;
+  margin-top: 25%;
+}
+main .card__banner .perfil__heroi img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+main .card__descrição {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+main .card__descrição h3 {
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: 400;
+}
+main .card__descrição p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 301.33px;
+  height: 127.53px;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+main .card__footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main .card__footer a button {
+  width: 145.34px;
+  height: 54.76px;
   background-color: #00669f;
-  padding: 16px;
+  color: white;
+  margin-bottom: 20px;
 }
 
-footer span {
-  color: white;
-}
+.rodape {
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  height: 51px;
+  width: 100%;
+  background-color: #00669f;
+  font-size: 1.6rem;
+  color: #FFF9F9;
+}/*# sourceMappingURL=style.css.map */
